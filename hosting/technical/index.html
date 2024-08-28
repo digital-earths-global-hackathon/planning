@@ -176,12 +176,23 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../hosting/technical/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Technical details for host teams</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../hosting/technical/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Technical details for host teams</span></a>
+  <a href="../../hosting/technical/data_request.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data request</span></a>
   </div>
 </li>
+      </ul>
+  </li>
       </ul>
   </li>
     </ul>
@@ -197,6 +208,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#requirements-rough" id="toc-requirements-rough" class="nav-link active" data-scroll-target="#requirements-rough">Requirements (rough):</a></li>
   <li><a href="#providing-the-data" id="toc-providing-the-data" class="nav-link" data-scroll-target="#providing-the-data">Providing the data</a>
   <ul class="collapse">
+  <li><a href="#the-data-request" id="toc-the-data-request" class="nav-link" data-scroll-target="#the-data-request">The data request</a></li>
   <li><a href="#grids" id="toc-grids" class="nav-link" data-scroll-target="#grids">Grids</a></li>
   <li><a href="#file-formats" id="toc-file-formats" class="nav-link" data-scroll-target="#file-formats">File formats</a></li>
   <li><a href="#catalogs" id="toc-catalogs" class="nav-link" data-scroll-target="#catalogs">Catalogs</a></li>
@@ -238,6 +250,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="providing-the-data" class="level1">
 <h1>Providing the data</h1>
 <p>For providing the data at hackathons, a hierarchy of resolutions in space and time has proven very useful, where data that is available at a fine spatial or temporal resolution is also available on equivalent grids at all coarser resolution levels. See <a href="https://nextgems-h2020.eu/of-hierarchies-chunking-and-healpix/">the nextGEMS blog</a> or <a href="https://easy.gems.dkrz.de/Processing/healpix/index.html">easy.gems</a> for more details.</p>
+<section id="the-data-request" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-request">The data request</h2>
+<p>The <a href="../../hosting/technical/data_request.html">Data request is under development</a>, and we are <a href="https://github.com/digital-earths-global-hackathon/tools/pull/1">working on a python script</a> to verify that a dataset matches the request.</p>
+</section>
 <section id="grids" class="level2">
 <h2 class="anchored" data-anchor-id="grids">Grids</h2>
 <p>The <a href="https://iopscience.iop.org/article/10.1086/427976/pdf">HEALPix grid (Górski et al., 2004)</a> has proven very useful for providing the data, as it features equal area cells, on isolatitude bands and yields itself naturally to a hierarchy of resolutions. It also features the option of using a cell ordering (<em>nest</em>) that represents the hierarchy and thus regions that are close in index space, usually also are close in geographical space. This eases reading only a region of a dataset from disks. See <a href="https://easy.gems.dkrz.de/Processing/healpix/index.html">easy.gems</a> for more info.</p>
