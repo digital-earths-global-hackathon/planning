@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://digital-earths-global-hackathon.github.io/planning/science/index.html</loc>
-    <lastmod>2024-09-19T13:52:30.083Z</lastmod>
+    <loc>https://digital-earths-global-hackathon.github.io/science/index.html</loc>
+    <lastmod>2024-09-25T10:04:53.594Z</lastmod>
   </url>
   <url>
-    <loc>https://digital-earths-global-hackathon.github.io/planning/index.html</loc>
-    <lastmod>2024-09-19T13:52:30.083Z</lastmod>
+    <loc>https://digital-earths-global-hackathon.github.io/index.html</loc>
+    <lastmod>2024-09-25T10:04:53.594Z</lastmod>
   </url>
   <url>
-    <loc>https://digital-earths-global-hackathon.github.io/planning/hosting/technical/index.html</loc>
-    <lastmod>2024-09-19T13:52:30.083Z</lastmod>
+    <loc>https://digital-earths-global-hackathon.github.io/hosting/technical/index.html</loc>
+    <lastmod>2024-09-25T10:04:53.594Z</lastmod>
   </url>
   <url>
-    <loc>https://digital-earths-global-hackathon.github.io/planning/hosting/logistics/index.html</loc>
-    <lastmod>2024-09-19T13:52:30.083Z</lastmod>
+    <loc>https://digital-earths-global-hackathon.github.io/hosting/logistics/index.html</loc>
+    <lastmod>2024-09-25T10:04:53.593Z</lastmod>
   </url>
   <url>
-    <loc>https://digital-earths-global-hackathon.github.io/planning/hosting/time_line.html</loc>
-    <lastmod>2024-09-19T13:52:30.083Z</lastmod>
+    <loc>https://digital-earths-global-hackathon.github.io/hosting/index.html</loc>
+    <lastmod>2024-09-25T10:04:53.593Z</lastmod>
   </url>
   <url>
-    <loc>https://digital-earths-global-hackathon.github.io/planning/hosting/logistics/agenda_template.html</loc>
-    <lastmod>2024-09-19T13:52:30.083Z</lastmod>
+    <loc>https://digital-earths-global-hackathon.github.io/hosting/time_line.html</loc>
+    <lastmod>2024-09-25T10:04:53.594Z</lastmod>
   </url>
   <url>
-    <loc>https://digital-earths-global-hackathon.github.io/planning/hosting/technical/data_request.html</loc>
-    <lastmod>2024-09-19T13:52:30.083Z</lastmod>
+    <loc>https://digital-earths-global-hackathon.github.io/hosting/logistics/agenda_template.html</loc>
+    <lastmod>2024-09-25T10:04:53.593Z</lastmod>
   </url>
   <url>
-    <loc>https://digital-earths-global-hackathon.github.io/planning/Hosts/index.html</loc>
-    <lastmod>2024-09-19T13:52:30.082Z</lastmod>
+    <loc>https://digital-earths-global-hackathon.github.io/hosting/technical/data_request.html</loc>
+    <lastmod>2024-09-25T10:04:53.594Z</lastmod>
+  </url>
+  <url>
+    <loc>https://digital-earths-global-hackathon.github.io/Hosts/index.html</loc>
+    <lastmod>2024-09-25T10:04:53.593Z</lastmod>
   </url>
 </urlset>
