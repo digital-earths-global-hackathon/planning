@@ -188,7 +188,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../hosting/technical/data_request.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data request</span></a>
+ <span class="menu-text">Draft Data request</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../hosting/technical/meeting-2024-10-21.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preparation meeting on 2024-10-21/22</span></a>
   </div>
 </li>
       </ul>
@@ -210,7 +216,6 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#the-data-request" id="toc-the-data-request" class="nav-link" data-scroll-target="#the-data-request">The data request</a></li>
   <li><a href="#grids" id="toc-grids" class="nav-link" data-scroll-target="#grids">Grids</a></li>
-  <li><a href="#file-formats" id="toc-file-formats" class="nav-link" data-scroll-target="#file-formats">File formats</a></li>
   <li><a href="#catalogs" id="toc-catalogs" class="nav-link" data-scroll-target="#catalogs">Catalogs</a></li>
   </ul></li>
   </ul>
@@ -252,26 +257,16 @@ ul.task-list li input[type="checkbox"] {
 <p>For providing the data at hackathons, a hierarchy of resolutions in space and time has proven very useful, where data that is available at a fine spatial or temporal resolution is also available on equivalent grids at all coarser resolution levels. See <a href="https://nextgems-h2020.eu/of-hierarchies-chunking-and-healpix/">the nextGEMS blog</a> or <a href="https://easy.gems.dkrz.de/Processing/healpix/index.html">easy.gems</a> for more details.</p>
 <section id="the-data-request" class="level2">
 <h2 class="anchored" data-anchor-id="the-data-request">The data request</h2>
-<p>The <a href="../../hosting/technical/data_request.html">Data request is under development</a>, and we are <a href="https://github.com/digital-earths-global-hackathon/tools/pull/1">working on a python script</a> to verify that a dataset matches the request.</p>
+<p>The <a href="data_request.qmd">Data request is under development</a>, and we are <a href="https://github.com/digital-earths-global-hackathon/tools/pull/1">working on a python script</a> to verify that a dataset matches the request.</p>
 </section>
 <section id="grids" class="level2">
 <h2 class="anchored" data-anchor-id="grids">Grids</h2>
 <p>The <a href="https://iopscience.iop.org/article/10.1086/427976/pdf">HEALPix grid (Górski et al., 2004)</a> has proven very useful for providing the data, as it features equal area cells, on isolatitude bands and yields itself naturally to a hierarchy of resolutions. It also features the option of using a cell ordering (<em>nest</em>) that represents the hierarchy and thus regions that are close in index space, usually also are close in geographical space. This eases reading only a region of a dataset from disks. See <a href="https://easy.gems.dkrz.de/Processing/healpix/index.html">easy.gems</a> for more info.</p>
 </section>
-<section id="file-formats" class="level2">
-<h2 class="anchored" data-anchor-id="file-formats">File formats</h2>
-<p>In principle any file format that is compatible with standard software could be used. However, zarr has proven very advantageous, as it allows to</p>
-<ul>
-<li>build large datasets covering anything up to an entire simulation output</li>
-<li>chunk data in all dimensions</li>
-</ul>
-<p>If plain zarr 2 is used, data can be read in many programming languages. For C-based software, a recent libnetcdf will do the trick. The downside of this approach is a lot of small files, which can be problematic on HPC systems, especially with inode quota.</p>
-<p>Other possible approaches include the use of <a href="https://fsspec.github.io/kerchunk/">kerchunk</a> in python for grouping data chunks in (netCDF/HDF5) files into unified datasets, that look like zarr to python. Other programming languages / codes can then still make use of the underlying netCDF files.</p>
-</section>
 <section id="catalogs" class="level2">
 <h2 class="anchored" data-anchor-id="catalogs">Catalogs</h2>
-<p>Grouping the datasets in catalogs allows to abstract from file system paths, and eases later dataset updates and migrations. <a href="https://intake.readthedocs.io/en/latest/">Intake</a> has proven useful here - mind that there are version one and two and that the two versions are not necessarily compatible. Intake-ESM is designed for unconsolidated data sets (e.g.&nbsp;hundreds of netCDF files). It is less useful in the context of zarr datasets.</p>
-<p>See <a href="https://easy.gems.dkrz.de/Processing/Intake/index.html">easy.gems</a> for examples of the use of the two catalogs in the context of previous hackathons.</p>
+<p>Grouping the datasets in catalogs allows to abstract from file system paths, and eases later dataset updates and migrations. <a href="https://intake.readthedocs.io/en/latest/">Intake</a> has proven useful here - mind that there are version one and two and that the two versions are not necessarily compatible.</p>
+<p>See <a href="https://easy.gems.dkrz.de/Processing/Intake/index.html">easy.gems</a> for examples of the use of intake in the context of previous hackathons.</p>
 
 
 </section>
