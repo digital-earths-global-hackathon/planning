@@ -17,10 +17,6 @@ format:
     center: true
     mermaid:
       theme: default
-
-jupyter: python3
-execute:
-  cache: true
 ---
 
 # File formats
