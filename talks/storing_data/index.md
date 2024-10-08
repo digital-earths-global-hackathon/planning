@@ -83,6 +83,13 @@ Make a compromise that's okay-ish for everybody by chunking along all dimensions
 * Keep them big enough for the compressor to do its job.
 * Usually MB-ish blocks are a good compromise.
 
+## Use fast compressors
+
+* [deflate](https://en.wikipedia.org/wiki/Deflate) (gzip/...) is widely used but slow.
+* [lz4](https://en.wikipedia.org/wiki/LZ4_(compression_algorithm)) and [zstd](https://en.wikipedia.org/wiki/Zstd) are much faster.
+* Use lz4 or zstd from [blosc](http://blosc.org/) as a good standard.
+
+
 # Mapping a dataset to files
 
 ## Contents of a dataset
