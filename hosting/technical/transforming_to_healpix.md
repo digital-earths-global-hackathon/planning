@@ -19,7 +19,14 @@ The simplest way to convert a file to a healpix level 9 netCDF
 cdo -f nc4 -k auto -z zstd -remapnn,hpz9 INFILE OUTFILE
 ```
 
-To create zarr, use 
+To create zarr, first create an [.ncrc](https://github.com/Unidata/netcdf-c/blob/main/docs/quickstart_env.md) file specifying that you want the dimension separator to be a `/` instead of `.`.
+
+```bash
+echo >> ~/.ncrc
+echo ZARR.DIMENSION_SEPARATOR=/ >> ~/.ncrc
+```
+
+Then use
 
 ```bash
 cdo -f nczarr -k auto -z zstd -remapnn,hpz9 INFILE \
