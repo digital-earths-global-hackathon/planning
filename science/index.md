@@ -5,7 +5,7 @@ aliases:
   - /planning/science/index.html
 ---
 
-# Core Simuations 
+# Core Simulations 
 
 The common scientific agenda of the Digital Earths Global Hackathon (DEGH) will be simulations of an annual cycle using global atmospheric general circulation models with a horizontal discretization of 5 km or less.  Every participating node will host one or more such simulations, which are performed and for which output is provided following a common protocool  These are the DEGH core simulations.
 
